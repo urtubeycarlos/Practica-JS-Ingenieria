@@ -78,8 +78,8 @@ QUnit.test("acumularTest", function(assert){
 		return acum + elem;
 	});
 
-	assert.ok(4320 == multiplicacion);
-	assert.ok(33 == suma);
+	assert.equal(4320, multiplicacion);
+	assert.equal(33, suma);
 
 });
 
