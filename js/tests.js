@@ -14,10 +14,11 @@ QUnit.module( "Tests procesos estandar sobre lista", {
 
 QUnit.test("obtenerParesTest", function(assert){
 
+	var res_esperados = [2, 8, 10];
 	resultado = procesarElementosLista(lista, PROCESOS_ESTANDAR.obtenerPares);
-	assert.equal(resultado[0], 2);
-	assert.equal(resultado[1], 8);
-	assert.equal(resultado[2], 10);
+
+	for (var i = 0; i < resultado.length; i++)
+		assert.equal(resultado[i], res_esperados[i]);
 
 });
 
